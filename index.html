@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="header.js"></script>
+    <title>Sekolahku - Yayasan Sekolahku</title>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+<menu-header></menu-header>
+
+    <main>
+        <section id="home" class="min-h-[80vh] flex flex-col justify-center bg-gradient-to-b from-white to-slate-50 py-16 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+                    <p class="inline-flex bg-emerald-50 text-emerald-700 text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-200 shadow-2xs">Penerimaan Siswa Baru (PPDB) <span class="tahun-awal" ></span>/<span class="tahun-akhir"></span></p>
+                    <h1 class="text-4xl sm:text-5xl font-black text-slate-900 leading-tight tracking-tight">
+                        Membentuk Generasi <span class="text-emerald-600">Unggul</span>, Berkarakter Islami & Melek Teknologi
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                        <span class="nama-sekolah"></span> memadukan ilmu agama yang mendalam dengan kurikulum modern berbasis kompetensi digital. Pilihan terbaik mengantarkan putra-putri Anda menuju masa depan cemerlang.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#pendaftaran" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-center px-8 py-4 rounded-xl shadow-md transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2"><i data-lucide="user-plus" class="w-5 h-5"></i> Isi Form Pendaftaran</a>
+                        <a href="#keadaan-sekolah" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold text-center px-8 py-4 rounded-xl shadow-xs transition transform hover:-translate-y-0.5">Eksplorasi Fasilitas & Kegiatan</a>
+                    </div>
+                </div>
+                <div class="relative w-full max-w-xl mx-auto lg:max-w-none flex justify-center lg:justify-end">
+                    <div class="absolute -inset-2 bg-emerald-100 rounded-3xl transform rotate-1 scale-95 opacity-50 blur-sm hidden sm:block"></div>
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-slate-100 w-full">
+                        <img src="images/halaman.png" alt="Halaman depan sekolah" class="w-full h-[350px] sm:h-[420px] object-cover rounded-2xl" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100 text-center">
+                    <p class="text-3xl sm:text-4xl font-black text-emerald-600">1,200+</p>
+                    <p class="text-xs font-bold uppercase text-slate-400 mt-1 tracking-wider">Siswa Aktif</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100 text-center">
+                    <p class="text-3xl sm:text-4xl font-black text-emerald-600">65+</p>
+                    <p class="text-xs font-bold uppercase text-slate-400 mt-1 tracking-wider">Guru Sertifikasi</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100 text-center">
+                    <p class="text-3xl sm:text-4xl font-black text-emerald-600">A (Unggul)</p>
+                    <p class="text-xs font-bold uppercase text-slate-400 mt-1 tracking-wider">Akreditasi Sekolah</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100 text-center">
+                    <p class="text-3xl sm:text-4xl font-black text-emerald-600">98%</p>
+                    <p class="text-xs font-bold uppercase text-slate-400 mt-1 tracking-wider">Lulusan Terserap PTN</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prestasi" class="py-20 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto space-y-12">
+                <div class="text-center space-y-3">
+                    <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase">Tradisi Juara</span>
+                    <h2 class="text-3xl font-black text-slate-900 sm:text-4xl tracking-tight">Prestasi Kebanggaan Madrasah</h2>
+                    <div class="h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-slate-50 border border-slate-200/60 p-6 rounded-2xl space-y-4 hover:bg-white hover:shadow-xl transition duration-300">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900">Juara 1 Kompetisi Sains Madrasah (KSM)</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Meraih medali emas bidang Informatika & Matematika Terintegrasi tingkat Wilayah.</p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200/60 p-6 rounded-2xl space-y-4 hover:bg-white hover:shadow-xl transition duration-300">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900">Juara 2 Robotik Madrasah Nasional</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Inovasi sistem IoT pertanian cerdas buatan tim siswa MA Manba'ul Huda sukses bersaing di level nasional.</p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200/60 p-6 rounded-2xl space-y-4 hover:bg-white hover:shadow-xl transition duration-300">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900">Musabaqah Hifzhil Qur'an (MHQ)</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Siswa kami konsisten menjuarai cabang tahfidz 5 juz dan 10 juz tingkat kota/kabupaten.</p>
+                    </div>
+                </div>
+                <div class="text-center pt-4">
+                    <a href="prestasi.html" class="text-sm font-bold text-emerald-600 hover:text-emerald-700 transition">Lihat Lemari Prestasi Selengkapnya &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="keadaan-sekolah" class="py-20 bg-slate-50 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto space-y-16">
+                <div class="text-center space-y-3">
+                    <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase">Kehidupan Kampus</span>
+                    <h2 class="text-3xl font-black text-slate-900 sm:text-4xl tracking-tight">Lingkungan & Aktivitas <span class="nama-sekolah"></span> </h2>
+                    <div class="h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <div class="bg-white border border-slate-200/60 rounded-2xl p-6 shadow-2xs space-y-5">
+                        <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                            <div class="text-emerald-600"><i data-lucide="school" class="w-6 h-6"></i></div>
+                            <h3 class="text-xl font-bold text-slate-900">Sarana Modern</h3>
+                        </div>
+                        <p class="text-sm text-slate-500">Kami mendukung kenyamanan belajar dengan fasilitas mutakhir nyata:</p>
+                        <ul class="space-y-3 text-sm text-slate-600 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Ruang Kelas Ber-AC & Proyektor</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Lab Komputer Spesifikasi Coding</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Perpustakaan Digital & Ruang Baca</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Masjid Luas Al-Huda</li>
+                        </ul>
+                        <a href="fasilitas.html" class="block text-xs font-bold text-emerald-600 hover:underline pt-2">Lihat galeri fasilitas &rarr;</a>
+                    </div>
+
+                    <div class="bg-white border border-slate-200/60 rounded-2xl p-6 shadow-2xs space-y-5">
+                        <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                            <div class="text-emerald-600"><i data-lucide="activity" class="w-6 h-6"></i></div>
+                            <h3 class="text-xl font-bold text-slate-900">Kegiatan & Ekskul</h3>
+                        </div>
+                        <p class="text-sm text-slate-500">Mengembangkan minat bakat secara seimbang dan dinamis:</p>
+                        <ul class="space-y-3 text-sm text-slate-600 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Workshop Coding & Robotik</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Olahraga (Futsal, Basket, Badminton)</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> English & Arabic Public Speaking</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Desain Grafis & Seni Hadroh</li>
+                        </ul>
+                        <a href="galeri.html" class="block text-xs font-bold text-emerald-600 hover:underline pt-2">Dokumentasi kegiatan siswa &rarr;</a>
+                    </div>
+
+                    <div class="bg-white border border-slate-200/60 rounded-2xl p-6 shadow-2xs space-y-5">
+                        <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                            <div class="text-emerald-600"><i data-lucide="users" class="w-6 h-6"></i></div>
+                            <h3 class="text-xl font-bold text-slate-900">Asatidzah & Pengajar</h3>
+                        </div>
+                        <p class="text-sm text-slate-500">Dibimbing oleh guru-guru muda profesional dan bersertifikasi khusus:</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-slate-200 rounded-full overflow-hidden shrink-0">
+                                    <img src="images/guru/guru1.png" alt="Guru" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-slate-800">Budi Pratama, S.Kom.</h4>
+                                    <p class="text-[10px] text-emerald-600 font-bold">Keahlian: Informatika & Multimedia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-slate-200 rounded-full overflow-hidden shrink-0">
+                                    <img src="images/guru/guru3.png" alt="Guru" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-slate-800">H. M. Rizky, Lc.</h4>
+                                    <p class="text-[10px] text-emerald-600 font-bold">Keahlian: Direktur Program Tahfidz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="guru.html" class="block text-xs font-bold text-emerald-600 hover:underline pt-1">Lihat semua staff pengajar &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto space-y-12">
+                <div class="text-center space-y-3">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight">Pilihan Jenjang Pendidikan</h2>
+                    <div class="h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-8 shadow-2xs flex flex-col justify-between hover:shadow-md transition">
+                        <div>
+                            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="book-open" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Madrasah Tsanawiyah</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Pendidikan tingkat dasar dengan penguatan akhlak, hafalan dasar Al-Qur'an, sains terpadu, dan pengenalan dunia teknologi digital.</p>
+                        </div>
+                        <a href="program.html#mts" class="text-sm font-bold text-emerald-600 hover:text-emerald-700 transition">Detail MTs &rarr;</a>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-8 shadow-2xs flex flex-col justify-between hover:shadow-md transition">
+                        <div>
+                            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="book-open" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Madrasah Aliyah</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">Persiapan matang menuju jenjang universitas unggulan melalui program IPA/IPS terintegrasi, kelas coding, dan pendalaman keagamaan.</p>
+                        </div>
+                        <a href="program.html#ma" class="text-sm font-bold text-emerald-600 hover:text-emerald-700 transition">Detail MA &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pendaftaran" class="py-20 bg-gradient-to-br from-emerald-800 to-slate-900 text-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl">
+                <div class="space-y-5 text-center lg:text-left">
+                    <span class="inline-block bg-emerald-700/60 border border-emerald-500/30 text-xs font-bold uppercase px-3 py-1 rounded-full tracking-wider">Kuota Terbatas Gelombang 1</span>
+                    <h2 class="text-3xl sm:text-4xl font-black tracking-tight">Amankan Kursi Putra-Putri Anda Sekarang Juga</h2>
+                    <p class="text-emerald-100/80 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0">
+                        Sistem pendaftaran awal terhubung langsung ke panitia PPDB via WhatsApp untuk proses konsultasi cepat, pemberkasan, dan penguncian nomor urut tes.
+                    </p>
+                </div>
+                
+                <div class="bg-white text-slate-800 p-6 sm:p-8 rounded-2xl shadow-2xl max-w-lg mx-auto w-full border border-slate-100">
+                    <h3 class="text-lg font-bold text-slate-900 mb-6 text-center border-b border-slate-100 pb-3">Formulir PPDB Online via WhatsApp</h3>
+                    <form id="whatsapp-form" class="space-y-4">
+                        <div>
+                            <label for="nama" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Nama Lengkap Calon Siswa</label>
+                            <input type="text" id="nama" placeholder="Contoh: Muhammad Ali" required class="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus:outline-emerald-600 bg-slate-50 focus:bg-white transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Email Aktif Orang Tua</label>
+                            <input type="email" id="email" placeholder="alamatemail@gmail.com" required class="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus:outline-emerald-600 bg-slate-50 focus:bg-white transition">
+                        </div>
+                        <div>
+    <label for="telp" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">No. WhatsApp Wali</label>
+    <input 
+        type="text" 
+        id="telp" 
+        placeholder="Contoh: 081234567890" 
+        required 
+        inputmode="numeric" 
+        onblur="formatNomorLokal(this)"
+        oninput="this.value = this.value.replace(/[^0-9+]/g, '');" class="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus:outline-emerald-600 bg-slate-50 focus:bg-white transition">
+</div>
+                        <div>
+                            <label for="jenjang" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Pilihan Jenjang</label>
+                            <select id="jenjang" class="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-sm bg-slate-50 focus:outline-emerald-600 transition">
+                                <option value="Madrasah Tsanawiyah (MTs)">Madrasah Tsanawiyah (MTs)</option>
+                                <option value="Madrasah Aliyah (MA)">Madrasah Aliyah (MA)</option>
+                            </select>
+                        </div>
+                        <div class="pt-2">
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl transition shadow-md cursor-pointer text-sm tracking-wide uppercase flex items-center justify-center gap-2">
+                                <i data-lucide="message-square" class="w-4 h-4"></i> Kirim via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<section id="kontak-detail" class="py-20 bg-white px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl items-center">
+        <div class="space-y-5">
+            <h2 class="text-2xl font-black text-slate-900 tracking-tight">Hubungi Sekretariat</h2>
+            <div class="h-1 w-12 bg-emerald-600 rounded-full"></div>
+            <div class="text-slate-600 space-y-3 text-sm sm:text-base">
+                <p class="flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-emerald-600 shrink-0"></i> 
+                    <span>Jl. Kompleks Pendidikan No. 11, Bandung, Jawa Barat</span>
+                </p>
+                <p class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5 text-emerald-600 shrink-0"></i> 
+                    <span>0812-3456-7890</span>
+                </p>
+                <p class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5 text-emerald-600 shrink-0"></i> 
+                    <span>info@sekolahku.sch.id</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="border border-slate-200/60 p-2 bg-slate-50 rounded-2xl shadow-sm overflow-hidden w-full">
+            <iframe 
+                id="peta-sekolah"
+                class="w-full h-[300px] sm:h-[350px] rounded-xl border-0 block" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.775724220282!2d107.61657714842636!3d-6.917395106825883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1782721917424!5m2!1sid!2sid" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs">
+        <p>&copy; <span class="tahun-awal"></span> Yayasan <span class="nama-sekolah"></span>. All Rights Reserved.</p>
+    </footer>
+    
+<script>
+    // 1. INISIALISASI LUCIDE ICONS
+    lucide.createIcons();
+
+    // 2. SETTING CONFIG SEKOLAH GLOBAL
+    const namaSekolahGlobal = "Sekolahku";
+    const tahunAwal = "2026";
+    const tahunAkhir = "2027";
+
+    // Render data sekolah ke elemen HTML
+    document.querySelectorAll('.nama-sekolah').forEach(el => el.textContent = namaSekolahGlobal);
+    document.querySelectorAll('.tahun-awal').forEach(el => el.textContent = tahunAwal);
+    document.querySelectorAll('.tahun-akhir').forEach(el => el.textContent = tahunAkhir);
+
+    // 3. LOGIKA HAMBURGER NAV MENU
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    if (menuBtn && menu) {
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+
+    // 4. LOGIKA SANITIZER INPUT TELEPON (PASTE EVENT)
+    const inputTelp = document.getElementById('telp');
+    if (inputTelp) {
+        inputTelp.addEventListener('paste', function(e) {
+            let pastedData = (e.clipboardData || window.clipboardData).getData('text');
+            let nomorBersih = pastedData.replace(/[^0-9]/g, '');
+            
+            if (nomorBersih.startsWith('62')) {
+                nomorBersih = '0' + nomorBersih.slice(2);
+            }
+            
+            e.preventDefault(); 
+            this.value = nomorBersih;
+        });
+    }
+
+    // Fungsi global untuk atribut HTML onblur="formatNomorLokal(this)"
+    function formatNomorLokal(input) {
+        let nomor = input.value.replace(/[^0-9]/g, '');
+        if (nomor.startsWith('62')) {
+            nomor = '0' + nomor.slice(2);
+        }
+        input.value = nomor;
+    }
+
+    // 5. LOGIKA FORMULIR SUBMIT KE WHATSAPP
+    const whatsappForm = document.getElementById('whatsapp-form');
+    if (whatsappForm) {
+        whatsappForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nomorAdmin = "6281234567890"; // Pastikan menggunakan kode negara 62
+            
+            const namaSiswa = document.getElementById('nama').value;
+            const emailWali = document.getElementById('email').value;
+            const jenjangPilihan = document.getElementById('jenjang').value;
+            let telpWali = document.getElementById('telp').value.trim();
+
+            // Validasi Sisi Klien (Security & UX)
+            const hanyaAngka = /^[0-9]+$/;
+            if (!hanyaAngka.test(telpWali)) {
+                alert("Gagal: No. WhatsApp Wali harus berupa angka saja!");
+                return;
+            }
+
+            if (telpWali.length < 9) {
+                alert("Gagal: Nomor WhatsApp terlalu pendek, tidak boleh kurang dari 9 digit!");
+                return;
+            }
+
+            // Susun template pesan teks WA
+            const pesanMentah = `Halo Panitia PPDB ${namaSekolahGlobal},
+
+Saya ingin mendaftarkan putra/putri saya melalui Iklan PPDB Landing Page dengan data berikut:
+
+• *Nama Calon Siswa:* ${namaSiswa}
+• *Email Orang Tua:* ${emailWali}
+• *No. WhatsApp Wali:* ${telpWali}
+• *Pilihan Jenjang:* ${jenjangPilihan}
+
+Mohon diproses untuk antrean nomor pendaftaran berikutnya. Terima kasih.`;
+
+            // Kirim via wa.me API
+            const teksPesan = encodeURIComponent(pesanMentah);
+            const urlWhatsApp = `https://wa.me/${nomorAdmin}?text=${teksPesan}`;
+            window.open(urlWhatsApp, '_blank');
+        });
+    }
+</script>
+</body>
+</html>

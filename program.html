@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Lucide Icons CDN Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="header.js"></script>
+    <title>Program Pendidikan - Yayasan Sekolahku</title>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+<menu-header></menu-header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="bg-gradient-to-b from-white to-slate-50 py-20 px-4 text-center border-b border-slate-100">
+            <div class="container mx-auto max-w-3xl space-y-4">
+                <span class="inline-block bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-200 shadow-2xs">Kurikulum & Peminatan</span>
+                <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-slate-900">Program Pendidikan & Unggulan</h1>
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                    Kami menyediakan berbagai program akademik terintegrasi serta pengembangan diri adaptif untuk membantu peserta didik meraih prestasi optimal sekaligus membangun karakter Islami yang kokoh.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. PENGANTAR PROGRAM & 7. METODE PEMBELAJARAN -->
+        <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-5xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-1 space-y-3">
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Pendekatan Kami</span>
+                    <h2 class="text-2xl font-black text-slate-900 tracking-tight leading-tight">Kurikulum Berbasis Kompetensi Abad 21</h2>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Desain pengajaran dirancang khusus guna menyeimbangkan inteligensi intelektual, ketangkasan digital, dan akhlakul karimah siswa melalui ekosistem pembelajaran yang aktif, inovatif, dan kolaboratif.
+                    </p>
+                </div>
+                <!-- Metode Grid -->
+                <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 border border-slate-200/60 rounded-xl space-y-1">
+                        <div class="text-emerald-600 flex items-center gap-2 font-bold text-sm"><i data-lucide="users" class="w-4 h-4"></i> Student-Centered</div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Siswa bertindak sebagai subjek aktif, mengeksplorasi wawasan secara mandiri terbimbing.</p>
+                    </div>
+                    <div class="p-4 border border-slate-200/60 rounded-xl space-y-1">
+                        <div class="text-emerald-600 flex items-center gap-2 font-bold text-sm"><i data-lucide="folder-git-2" class="w-4 h-4"></i> Project-Based</div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Pembelajaran kontekstual melalui pengerjaan proyek nyata nyata untuk melatih pemecahan masalah.</p>
+                    </div>
+                    <div class="p-4 border border-slate-200/60 rounded-xl space-y-1">
+                        <div class="text-emerald-600 flex items-center gap-2 font-bold text-sm"><i data-lucide="monitor" class="w-4 h-4"></i> Digital Learning</div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Integrasi perangkat Chromebook, ruang kelas digital terpadu, serta modul interaktif.</p>
+                    </div>
+                    <div class="p-4 border border-slate-200/60 rounded-xl space-y-1">
+                        <div class="text-emerald-600 flex items-center gap-2 font-bold text-sm"><i data-lucide="shuffle" class="w-4 h-4"></i> Blended Learning</div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Kombinasi tatap muka kelas yang dinamis dengan pengayaan materi sistem digital mandiri.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROGRAM AKADEMIK (BAGIAN UTAMA DENGAN CARD TIGHT) -->
+        <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8 border-y border-slate-100">
+            <div class="container mx-auto max-w-5xl space-y-12">
+                <div class="text-center space-y-2">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight">Kategori Kelas Akademik</h2>
+                    <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1: Reguler -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between hover:shadow-md transition">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center"><i data-lucide="book" class="w-5 h-5"></i></div>
+                            <h3 class="font-bold text-base text-slate-900">Kelas Reguler</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Pembelajaran standar kurikulum nasional dengan pendalaman materi keagamaan yang intensif dan kolaboratif.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2: Digital -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between hover:shadow-md transition">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center"><i data-lucide="monitor" class="w-5 h-5"></i></div>
+                            <h3 class="font-bold text-base text-slate-900">Kelas Digital</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Optimalisasi perangkat teknologi informasi, modul e-book khusus, dan ujian berbasis komputer harian.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3: Sains -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between hover:shadow-md transition">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center"><i data-lucide="flask-conical" class="w-5 h-5"></i></div>
+                            <h3 class="font-bold text-base text-slate-900">Kelas Sains &amp; Riset</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Penajaman materi eksakta khusus, praktikum laboratorium mendalam, serta persiapan kompetisi KSM.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4: Bahasa -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between hover:shadow-md transition">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center"><i data-lucide="languages" class="w-5 h-5"></i></div>
+                            <h3 class="font-bold text-base text-slate-900">Kelas Bahasa Aktif</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed">Penguatan kecakapan komunikasi interaktif Bahasa Inggris dan Arab sebagai lingkuafra harian asrama.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROGRAM UNGGULAN (DENGAN TAB FILTER) -->
+        <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-5xl space-y-12">
+                <div class="text-center space-y-2">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight">Program Peminatan Ciri Khas</h2>
+                    <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+
+                <!-- Tab Control Buttons -->
+                <div class="flex justify-center border-b border-slate-100 pb-2 gap-4 text-xs font-bold text-slate-400">
+                    <button onclick="switchTab('keagamaan')" id="tab-btn-keagamaan" class="tab-btn pb-2 border-b-2 border-emerald-600 text-emerald-700 cursor-pointer">Program Keagamaan</button>
+                    <button onclick="switchTab('teknologi')" id="tab-btn-teknologi" class="tab-btn pb-2 border-b-2 border-transparent hover:text-slate-600 cursor-pointer">Teknologi &amp; Bisnis</button>
+                </div>
+
+                <!-- Tab Content 1: Keagamaan -->
+                <div id="tab-keagamaan" class="tab-content grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="p-5 bg-slate-50 border border-slate-100 rounded-2xl flex gap-4 items-start">
+                        <div class="text-emerald-600 bg-white p-2.5 rounded-xl border border-slate-200 shadow-2xs shrink-0"><i data-lucide="bookmark" class="w-5 h-5"></i></div>
+                        <div><h4 class="font-bold text-sm text-slate-900">Tahfidz Al-Qur'an Mandiri</h4><p class="text-[11px] text-slate-500 leading-relaxed mt-1">Bimbingan setoran hafalan harian terstruktur dengan target pencapaian mutqin bersertifikat resmi syahadah.</p></div>
+                    </div>
+                    <div class="p-5 bg-slate-50 border border-slate-100 rounded-2xl flex gap-4 items-start">
+                        <div class="text-emerald-600 bg-white p-2.5 rounded-xl border border-slate-200 shadow-2xs shrink-0"><i data-lucide="book-open" class="w-5 h-5"></i></div>
+                        <div><h4 class="font-bold text-sm text-slate-900">Kajian Kitab Turats (Kuning)</h4><p class="text-[11px] text-slate-500 leading-relaxed mt-1">Pendalaman literatur fiqih, aqidah, dan gramatika bahasa arab dasar guna menjaga khazanah keislaman otentik.</p></div>
+                    </div>
+                </div>
+
+                <!-- Tab Content 2: Teknologi & Bisnis (Hidden Awal) -->
+  <div id="tab-teknologi" class="tab-content hidden grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+    <div class="p-5 bg-slate-50 border border-slate-100 rounded-2xl flex gap-4 items-start">
+        <div class="text-emerald-600 bg-white p-2.5 rounded-xl border border-slate-200 shadow-2xs shrink-0"><i data-lucide="code" class="w-5 h-5"></i></div>
+        <div><h4 class="font-bold text-sm text-slate-900">Coding &amp; Programming</h4><p class="text-[11px] text-slate-500 leading-relaxed mt-1">Modul pengenalan logika algoritma pemrograman, pembuatan web dasar, serta dasar robotik IoT terapan.</p></div>
+    </div>
+    <div class="p-5 bg-slate-50 border border-slate-100 rounded-2xl flex gap-4 items-start">
+        <div class="text-emerald-600 bg-white p-2.5 rounded-xl border border-slate-200 shadow-2xs shrink-0"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
+        <div><h4 class="font-bold text-sm text-slate-900">Kewirausahaan Santri</h4><p class="text-[11px] text-slate-500 leading-relaxed mt-1">Praktek dasar manajemen bisnis ritel, e-commerce, dan literasi finansial terapan untuk kemandirian ekonomi.</p></div>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <!-- 5. KURIKULUM & 6. EKSTRAKURIKULER -->
+        <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8 border-t border-slate-100">
+            <div class="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Kurikulum -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 space-y-4 shadow-2xs">
+                    <h3 class="font-black text-lg text-slate-900 border-b border-slate-100 pb-2 flex items-center gap-2"><i data-lucide="award" class="w-5 h-5 text-emerald-600"></i> Landasan Kurikulum Resmi</h3>
+                    <p class="text-xs text-slate-500">Pendidikan kami mengacu penuh pada integrasi tiga pilar utama:</p>
+                    <div class="space-y-2 text-xs text-slate-600 font-medium">
+                        <p class="p-3 bg-slate-50 rounded-xl border border-slate-100">📌 Kurikulum Merdeka (Kementerian Pendidikan &amp; Kebudayaan)</p>
+                        <p class="p-3 bg-slate-50 rounded-xl border border-slate-100">📌 Kurikulum Keagamaan Terpadu (Kementerian Agama RI)</p>
+                        <p class="p-3 bg-slate-50 rounded-xl border border-slate-100">📌 Program Penguatan Profil Pelajar Pancasila Rahmatan Lil Alamin (P5RA)</p>
+                    </div>
+                </div>
+                <!-- Ekstrakurikuler -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 space-y-4 shadow-2xs">
+                    <h3 class="font-black text-lg text-slate-900 border-b border-slate-100 pb-2 flex items-center gap-2"><i data-lucide="activity" class="w-5 h-5 text-emerald-600"></i> Klub Ekstrakurikuler Wajib/Pilihan</h3>
+                    <p class="text-xs text-slate-500">Wadah pengembangan minat bakat di luar jam kegiatan belajar inti:</p>
+                    <div class="grid grid-cols-2 gap-3 text-center text-xs font-bold text-slate-700">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">Pramuka Wajib</div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">Robotik &amp; IoT</div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">Futsal &amp; Basket</div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">Hadroh &amp; Kaligrafi</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. PRESTASI PROGRAM -->
+        <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-5xl space-y-12">
+                <div class="text-center space-y-2">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight">Output Capaian Hasil Program</h2>
+                    <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
+                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200/60 shadow-2xs"><p class="text-2xl font-black text-emerald-600">🥇 Juara 1</p><p class="text-xs font-bold text-slate-800 mt-1">KSM Informatika</p><p class="text-[10px] text-slate-400 mt-0.5">Tingkat Wilayah Kota/Kabupaten</p></div>
+                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200/60 shadow-2xs"><p class="text-2xl font-black text-emerald-600">🤖 Juara 2</p><p class="text-xs font-bold text-slate-800 mt-1">Olimpiade Robotik Nasional</p><p class="text-[10px] text-slate-400 mt-0.5">Kategori Inovasi IoT Terapan</p></div>
+                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200/60 shadow-2xs"><p class="text-2xl font-black text-emerald-600">🎯 98%</p><p class="text-xs font-bold text-slate-800 mt-1">Kelulusan PTN/PTKIN</p><p class="text-[10px] text-slate-400 mt-0.5">Melalui Jalur Prestasi SNBP/SPAN</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. FAQ PROGRAM PENDIDIKAN -->
+        <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8 border-t border-slate-100">
+            <div class="container mx-auto max-w-3xl space-y-8">
+                <div class="text-center space-y-2">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight">FAQ Seputar Program Peminatan</h2>
+                    <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                <div class="space-y-4">
+                    <details class="bg-white p-4 rounded-xl border border-slate-200 group" open>
+                        <summary class="font-bold text-sm text-slate-800 cursor-pointer list-none flex justify-between items-center">
+                            Apakah ada seleksi khusus untuk masuk ke program Kelas Digital atau Sains?
+                            <span class="transition group-open:rotate-180">&darr;</span>
+                        </summary>
+                        <p class="text-xs text-slate-600 mt-2 pl-2 border-l-2 border-emerald-500">Ya, penjurusan program kelas peminatan khusus (Digital/Sains) ditentukan berdasarkan hasil pemetaan tes potensi akademik awal, minat bakat santri, serta kuota daya tampung kelas yang tersedia.</p>
+                    </details>
+                    <details class="bg-white p-4 rounded-xl border border-slate-200 group">
+                        <summary class="font-bold text-sm text-slate-800 cursor-pointer list-none flex justify-between items-center">
+                            Apakah tersedia biaya tambahan bulanan untuk mengikuti program unggulan Coding?
+                            <span class="transition group-open:rotate-180">&darr;</span>
+                        </summary>
+                        <p class="text-xs text-slate-600 mt-2 pl-2 border-l-2 border-emerald-500">Seluruh biaya praktikum fasilitas inti, penggunaan laboratorium komputer, dan bimbingan modul utama sudah terintegrasi penuh ke dalam biaya SPP bulanan reguler tanpa pungutan tambahan khusus.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. CTA (CALL TO ACTION CONVERSION) -->
+        <section class="py-16 bg-gradient-to-br from-emerald-800 to-slate-900 text-white px-4 text-center">
+            <div class="container mx-auto max-w-2xl space-y-6">
+                <h2 class="text-2xl sm:text-3xl font-black tracking-tight">Tertarik Dengan Ekosistem Program Pendidikan Kami?</h2>
+                <p class="text-emerald-100/80 text-sm leading-relaxed">
+                    Amankan satu kuota pendaftaran awal siswa baru gelombang pertama untuk jaminan kelayakan penempatan kelas peminatan terbaik.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+                    <a href="index.html#pendaftaran" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-md text-xs sm:text-sm transition">Daftar PPDB Sekarang</a>
+                    <a href="index.html#kontak-detail" class="bg-white hover:bg-slate-100 text-slate-800 font-bold px-6 py-3 rounded-xl shadow-md text-xs sm:text-sm transition">Hubungi Panitia</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-500 py-8 text-center text-xs">
+        <p>&copy; 2026 Yayasan Manba'ul Huda. All Rights Reserved. <a href="index.html" class="text-emerald-500 ml-1 hover:underline">Kembali ke Beranda</a></p>
+    </footer>
+
+    <!-- SCRIPT UTAMA LOGIC JAVASCRIPT -->
+    <script>
+        // Inisialisasi Lucide Icons
+        lucide.createIcons();
+
+        // JAVASCRIPT ACTION: PENGENDALI SISTEM SWITCH TAB KATEGORI PROGRAM UNGGULAN
+        function switchTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            // 1. Setel ulang seluruh visibilitas konten tab menjadi tersembunyi
+            contents.forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('grid'); // Bersihkan display grid bawaan agar tidak bentrok
+            });
+
+            // 2. Setel ulang status border indikator aktif pada tombol tab
+            buttons.forEach(btn => {
+                btn.classList.remove('border-emerald-600', 'text-emerald-700');
+                btn.classList.add('border-transparent');
+            });
+
+            // 3. Aktifkan konten target secara dinamis dengan display grid
+            const targetContent = document.getElementById(`tab-${tabId}`);
+            targetContent.classList.remove('hidden');
+            targetContent.classList.add('grid');
+
+            // 4. Ubah visual tombol aktif
+            const targetBtn = document.getElementById(`tab-btn-${tabId}`);
+            targetBtn.classList.remove('border-transparent');
+            targetBtn.classList.add('border-emerald-600', 'text-emerald-700');
+        }
+    </script>
+</body>
+</html>

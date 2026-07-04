@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Lucide Icons CDN Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="header.js"></script>
+    <title>Profil Lembaga - Yayasan Sekolahku</title>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <menu-header></menu-header>
+
+    <!-- 1. HERO / BANNER PROFIL (PERBAIKAN: Menggunakan tag <img> asli dengan opacity terisolasi agar GPU HP aman) -->
+     <section class="relative bg-slate-900 text-white py-24 px-4 overflow-hidden">
+    <img src="images/halaman.png" 
+         alt="Background Banner" 
+         class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
+         style="content-visibility: auto; transform: translateZ(0); will-change: transform;"
+         fetchpriority="high"
+         loading="eager">
+    
+    <div class="relative container mx-auto max-w-4xl text-center space-y-4 z-10">
+        <span class="inline-block bg-emerald-600 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Profil Lembaga</span>
+        <h1 class="text-4xl sm:text-5xl font-black tracking-tight">Mengenal <span class="nama-sekolah"></span></h1>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            Mengenal lebih dekat institusi pendidikan yang berkomitmen mencetak generasi unggul, berkarakter islami, dan melek teknologi.
+        </p>
+    </div>
+</section>
+
+    <!-- 2. SAMBUTAN KEPALA SEKOLAH & 10. PROFIL KEPALA SEKOLAH -->
+    <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+            <div class="text-center space-y-3">
+                <div class="w-48 h-48 sm:w-56 sm:h-56 bg-slate-100 rounded-2xl shadow-md mx-auto overflow-hidden border-4 border-emerald-50">
+                    <img src="images/guru/guru3.png" alt="Ahmad Fauzi, S.Pd." class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">Ahmad Fauzi, S.Pd.</h3>
+                    <p class="text-xs font-semibold text-emerald-600">Kepala Madrasah &bull; Sejak 2020</p>
+                    <p class="text-[11px] text-slate-400 mt-1">Alumni S1 Pendidikan Luar Biasa / S2 Manajemen Pendidikan</p>
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-4 text-slate-600 leading-relaxed">
+                <i data-lucide="quote" class="w-8 h-8 text-emerald-200"></i>
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight">Sambutan Kepala Madrasah</h2>
+                <p><em>Assalamu&apos;alaikum Warahmatullahi Wabarakatuh,</em></p>
+                <p>Selamat datang di halaman resmi <span class="nama-sekolah"></span>. Kami percaya bahwa pendidikan terbaik adalah yang mampu menyeimbangkan kedalaman kompetensi spiritual akhlakul karimah dengan kecakapan teknologi serta penguasaan sains modern di abad ke-21.</p>
+                <p>Komitmen kami adalah menyediakan ekosistem belajar yang adaptif, aman, dan didukung oleh fasilitas memadai serta guru tersertifikasi agar putra-putri Anda siap bersaing di kancah nasional maupun global.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SEJARAH SEKOLAH (TIMELINE) -->
+    <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-4xl space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Perjalanan Sejarah Lembaga</h2>
+                <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:w-0.5 before:bg-slate-200">
+                <div class="relative flex flex-col sm:flex-row items-start sm:justify-between group">
+                    <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-emerald-600 rounded-full border-4 border-white transform -translate-x-1.5 sm:-translate-x-2"></div>
+                    <div class="pl-12 sm:pl-0 sm:w-[45%] bg-white p-5 rounded-xl border border-slate-200/60 shadow-2xs">
+                        <span class="font-black text-emerald-600">Tahun 2001</span>
+                        <h4 class="font-bold text-slate-900 mt-1">Awal Pendirian Yayasan</h4>
+                        <p class="text-xs text-slate-500 mt-1">Didirikan oleh para tokoh ulama lokal dengan fokus awal penataan madrasah diniyah tradisional.</p>
+                    </div>
+                    <div class="hidden sm:block w-[45%]"></div>
+                </div>
+                <div class="relative flex flex-col sm:flex-row items-start sm:justify-between group">
+                    <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-emerald-600 rounded-full border-4 border-white transform -translate-x-1.5 sm:-translate-x-2"></div>
+                    <div class="hidden sm:block w-[45%]"></div>
+                    <div class="pl-12 sm:pl-0 sm:w-[45%] bg-white p-5 rounded-xl border border-slate-200/60 shadow-2xs">
+                        <span class="font-black text-emerald-600">Tahun 2015</span>
+                        <h4 class="font-bold text-slate-900 mt-1">Akreditasi & Integrasi Sains</h4>
+                        <p class="text-xs text-slate-500 mt-1">Resmi mendapatkan Akreditasi tingkat "A" Unggul, serta melakukan perluasan kurikulum nasional terpadu.</p>
+                    </div>
+                </div>
+                <div class="relative flex flex-col sm:flex-row items-start sm:justify-between group">
+                    <div class="absolute left-4 sm:left-1/2 w-4 h-4 bg-emerald-600 rounded-full border-4 border-white transform -translate-x-1.5 sm:-translate-x-2"></div>
+                    <div class="pl-12 sm:pl-0 sm:w-[45%] bg-white p-5 rounded-xl border border-slate-200/60 shadow-2xs">
+                        <span class="font-black text-emerald-600">Tahun 2026</span>
+                        <h4 class="font-bold text-slate-900 mt-1">Era Digital & Smart Campus</h4>
+                        <p class="text-xs text-slate-500 mt-1">Penerapan infrastruktur ujian mandiri CBT, penyediaan Lab komputer tingkat tinggi, and peresmian Kelas Digital.</p>
+                    </div>
+                    <div class="hidden sm:block w-[45%]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. IDENTITAS SEKOLAH -->
+    <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-3xl space-y-8">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Identitas Resmi Madrasah</h2>
+                <div class="h-1 w-12 bg-emerald-600 rounded-full"></div>
+            </div>
+            <div class="border border-slate-200 rounded-2xl overflow-hidden shadow-xs bg-white">
+                <table class="w-full text-left text-sm border-collapse">
+                    <tbody>
+                        <tr class="border-b border-slate-100 bg-slate-50/50"><td class="p-4 font-bold text-slate-500 w-1/3">Nama Sekolah</td><td class="p-4 text-slate-800 font-semibold">Yayasan <span class="nama-sekolah"></span></td></tr>
+                        <tr class="border-b border-slate-100"><td class="p-4 font-bold text-slate-500">NPSN</td><td class="p-4 text-slate-800 font-mono">1234567890 (Contoh)</td></tr>
+                        <tr class="border-b border-slate-100 bg-slate-50/50"><td class="p-4 font-bold text-slate-500">Status Lembaga</td><td class="p-4 text-slate-800 font-semibold">Swasta Terakreditasi</td></tr>
+                        <tr class="border-b border-slate-100"><td class="p-4 font-bold text-slate-500">Jenjang Operasional</td><td class="p-4 text-slate-800 font-semibold">Madrasah Tsanawiyah (MTs) &amp; Madrasah Aliyah (MA)</td></tr>
+                        <tr class="border-b border-slate-100 bg-slate-50/50"><td class="p-4 font-bold text-slate-500">Peringkat Akreditasi</td><td class="p-4 text-emerald-700 font-bold">A (Unggul)</td></tr>
+                        <tr class="border-b border-slate-100"><td class="p-4 font-bold text-slate-500">Alamat Lengkap</td><td class="p-4 text-slate-800">Jl. Kompleks Pendidikan No. 11, Bandung, Jawa Barat</td></tr>
+                        <tr class="border-b border-slate-100 bg-slate-50/50"><td class="p-4 font-bold text-slate-500">Email Utama</td><td class="p-4 text-slate-800 font-mono">info@sekolahku.sch.id</td></tr>
+                        <tr><td class="p-4 font-bold text-slate-500">Situs Web</td><td class="p-4 text-emerald-600 font-mono font-semibold">www.sekolahku.sch.id</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. VISI, 6. MISI & 8. TUJUAN SEKOLAH -->
+    <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Perbaikan: Mengubah grid menjadi flex agar rendering GPU Android sangat ringan -->
+        <div class="container mx-auto max-w-5xl flex flex-col lg:flex-row gap-8">
+            
+            <!-- Visi & Misi Container (Lebar otomatis menyesuaikan layar) -->
+            <div class="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-2xl shadow-2xs space-y-6 flex-1">
+                <div class="space-y-2">
+                    <h3 class="text-xl font-black text-slate-900 flex items-center gap-2"><i data-lucide="compass" class="w-5 h-5 text-emerald-600"></i> Visi Utama</h3>
+                    <p class="text-slate-600 font-medium italic bg-slate-50 p-4 rounded-xl border border-slate-100 leading-relaxed text-sm">
+                        "Menjadi lembaga pendidikan unggulan yang melahirkan lulusan berakhlak mulia, kompetitif di bidang sains, serta adaptif menghadapi disrupsi teknologi global."
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-black text-slate-900 flex items-center gap-2"><i data-lucide="target" class="w-5 h-5 text-emerald-600"></i> Misi Strategis</h3>
+                    <ul class="space-y-2 text-sm text-slate-600 leading-relaxed">
+                        <li class="flex items-start gap-2"><span>1.</span> Menyediakan sistem pembelajaran modern berbasis teknologi informasi terpadu.</li>
+                        <li class="flex items-start gap-2"><span>2.</span> Menanamkan pembiasaan karakter islami dan kedisiplinan asrama/sekolah yang ketat.</li>
+                        <li class="flex items-start gap-2"><span>3.</span> Mengembangkan segenap potensi minat bakat nonakademik santri melalui program ekstrakurikuler dinamis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tujuan Sekolah -->
+            <div class="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-2xl shadow-2xs space-y-4 flex-1">
+                <h3 class="text-xl font-black text-slate-900 flex items-center gap-2"><i data-lucide="check-square" class="w-5 h-5 text-emerald-600"></i> Target & Tujuan Institusi</h3>
+                <p class="text-sm text-slate-500">Langkah operasional Yayasan ditujukan khusus untuk mencapai:</p>
+                <div class="grid grid-cols-1 gap-3 text-sm text-slate-600">
+                    <div class="p-3 bg-slate-50 border border-slate-100 rounded-xl font-medium">🎯 Menghasilkan lulusan yang menguasai dasar kompetensi pemrograman (coding) dan kebahasaan.</div>
+                    <div class="p-3 bg-slate-50 border border-slate-100 rounded-xl font-medium">🎯 Menjamin persentase kelulusan ujian berbasis komputer mencapai batas maksimal yang kompeten.</div>
+                    <div class="p-3 bg-slate-50 border border-slate-100 rounded-xl font-medium">🎯 Mempertahankan rekam jejak kelulusan siswa ke jenjang Perguruan Tinggi Negeri unggulan di Indonesia.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. NILAI-NILAI SEKOLAH -->
+    <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-5xl space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Karakter &amp; Nilai Utama</h2>
+                <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50/50 space-y-2">
+                    <div class="mx-auto text-emerald-600"><i data-lucide="shield-check" class="w-8 h-8 mx-auto"></i></div>
+                    <h4 class="font-bold text-sm text-slate-900">Integritas</h4>
+                </div>
+                <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50/50 space-y-2">
+                    <div class="mx-auto text-emerald-600"><i data-lucide="clock" class="w-8 h-8 mx-auto"></i></div>
+                    <h4 class="font-bold text-sm text-slate-900">Disiplin Tinggi</h4>
+                </div>
+                <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50/50 space-y-2">
+                    <div class="mx-auto text-emerald-600"><i data-lucide="zap" class="w-8 h-8 mx-auto"></i></div>
+                    <h4 class="font-bold text-sm text-slate-900">Kreativitas</h4>
+                </div>
+                <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50/50 space-y-2">
+                    <div class="mx-auto text-emerald-600"><i data-lucide="heart" class="w-8 h-8 mx-auto"></i></div>
+                    <h4 class="font-bold text-sm text-slate-900">Religius</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. STRUKTUR ORGANISASI -->
+    <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-4xl space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Struktur Manajemen Organisasi</h2>
+                <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="flex flex-col gap-4 text-center max-w-md mx-auto text-sm font-bold text-slate-700">
+                <div class="p-3 bg-emerald-700 text-white rounded-xl shadow-xs">Dewan Pembina Yayasan</div>
+                <div class="mx-auto text-slate-300"><i data-lucide="arrow-down" class="w-5 h-5"></i></div>
+                <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-2xs">Kepala Madrasah (Ahmad Fauzi, S.Pd.)</div>
+                <div class="mx-auto text-slate-300"><i data-lucide="arrow-down" class="w-5 h-5"></i></div>
+                <div class="grid grid-cols-3 gap-2 text-[11px] sm:text-xs">
+                    <div class="p-2 bg-slate-200 rounded-lg">Waka Kurikulum</div>
+                    <div class="p-2 bg-slate-200 rounded-lg">Waka Kesiswaan</div>
+                    <div class="p-2 bg-slate-200 rounded-lg">Waka Sarpras</div>
+                </div>
+                <div class="mx-auto text-slate-300"><i data-lucide="arrow-down" class="w-5 h-5"></i></div>
+                <div class="p-2.5 bg-slate-100 rounded-xl border border-slate-200">Dewan Guru &amp; Tenaga Kependidikan</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. GURU & STATISTIK -->
+    <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-5xl space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Kualifikasi Pendidik &amp; Statistik</h2>
+                <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
+                <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                    <h3 class="text-xl font-bold text-slate-900">Sumber Daya Manusia Kompeten</h3>
+                    <p>Proses pengajaran di Manba'ul Huda dikelola penuh oleh <strong>65+ Guru Bersertifikasi</strong> lulusan perguruan tinggi linier terbaik. Rasio perbandingan antara guru dan siswa diatur secara ketat (1:20) untuk memastikan setiap individu anak memperoleh perhatian bimbingan akademik yang optimal.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100"><p class="text-2xl font-black text-emerald-600">100%</p><p class="text-[11px] font-bold uppercase text-slate-400 mt-1">Lulusan S1/S2</p></div>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100"><p class="text-2xl font-black text-emerald-600">1:20</p><p class="text-[11px] font-bold uppercase text-slate-400 mt-1">Rasio Kelas Ideal</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 14. PROGRAM UNGGULAN -->
+    <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="container mx-auto max-w-5xl space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Program Pengembangan Unggulan</h2>
+                <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <!-- Perbaikan: Mengubah grid menjadi flex responsif wrap -->
+            <div class="flex flex-col sm:flex-row flex-wrap gap-6 justify-center">
+                <div class="bg-white border border-slate-200/60 p-6 rounded-2xl space-y-3 shadow-2xs flex-1 min-w-[250px]">
+                    <div class="text-emerald-600"><i data-lucide="code" class="w-6 h-6"></i></div>
+                    <h4 class="font-bold text-slate-900">Kelas Digital & Coding</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Membekali logika dasar pemrograman aplikasi dan penguasaan platform teknologi informasi masa kini.</p>
+                </div>
+                <div class="bg-white border border-slate-200/60 p-6 rounded-2xl space-y-3 shadow-2xs flex-1 min-w-[250px]">
+                    <div class="text-emerald-600"><i data-lucide="book-open" class="w-6 h-6"></i></div>
+                    <h4 class="font-bold text-slate-900">Intensif Tahfidz Qur'an</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Bimbingan setoran hafalan mandiri terstruktur dengan target capaian juz yang bersertifikat resmi.</p>
+                </div>
+                <div class="bg-white border border-slate-200/60 p-6 rounded-2xl space-y-3 shadow-2xs flex-1 min-w-[250px]">
+                    <div class="text-emerald-600"><i data-lucide="languages" class="w-6 h-6"></i></div>
+                    <h4 class="font-bold text-slate-900">English Public Speaking</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Laboratorium bahasa aktif harian guna melatih kepercayaan diri komunikasi asing interaktif.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 12. FASILITAS & 13. PRESTASI -->
+    <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-3">
+                <h4 class="font-bold text-lg text-slate-900">Infrastruktur Kampus</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Seluruh proses ajar dilengkapi fasilitas penunjang seperti Ruang Kelas ber-AC full, Laboratorium IPA terintegrasi, perpustakaan digital, serta masjid utama milik Yayasan.</p>
+                <a href="index.html#keadaan-sekolah" class="inline-block text-xs font-bold text-emerald-600 hover:underline pt-2">Eksplorasi Fasilitas Lengkap &rarr;</a>
+            </div>
+            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-3">
+                <h4 class="font-bold text-lg text-slate-900">Catatan Rekor Prestasi</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Konsistensi raihan medali emas pada Kompetisi Sains Madrasah (KSM) tingkat wilayah, serta Juara umum olimpiade robotik nasional pengembang IoT.</p>
+                <a href="index.html#prestasi" class="inline-block text-xs font-bold text-emerald-600 hover:underline pt-2">Lihat Lemari Prestasi &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. EKSTRAKURIKULER (PERBAIKAN: Menambahkan relative z-10 isolasi layouting GPU) -->
+    <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8 relative z-10 transform translate-z-0">
+        <div class="container mx-auto max-w-5xl space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Klub Ekstrakurikuler</h2>
+                <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto text-center font-bold text-xs text-slate-700">
+                <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center justify-center gap-2 shadow-2xs"><i data-lucide="layers" class="w-4 h-4 text-emerald-600"></i> Pramuka Wajib</div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center justify-center gap-2 shadow-2xs"><i data-lucide="activity" class="w-4 h-4 text-emerald-600"></i> Robotik &amp; IoT</div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center justify-center gap-2 shadow-2xs"><i data-lucide="globe" class="w-4 h-4 text-emerald-600"></i> Futsal &amp; Basket</div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center justify-center gap-2 shadow-2xs"><i data-lucide="heart" class="w-4 h-4 text-emerald-600"></i> PMR / Paskibra</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. LOKASI MAPS & 18. KONTAK DETAIL -->
+    <section id="kontak-detail" class="py-20 bg-white px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl items-center">
+            <div class="space-y-5">
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight">Hubungi Sekretariat</h2>
+                <div class="h-1 w-12 bg-emerald-600 rounded-full"></div>
+                <div class="text-slate-600 space-y-3 text-sm sm:text-base">
+                    <p class="flex items-center gap-2">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-emerald-600 shrink-0"></i> 
+                        <span>Jl. Kompleks Pendidikan No. 11, Bandung, Jawa Barat</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i data-lucide="phone" class="w-5 h-5 text-emerald-600 shrink-0"></i> 
+                        <span>0812-3456-7890</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i data-lucide="mail" class="w-5 h-5 text-emerald-600 shrink-0"></i> 
+                        <span>info@sekolahku.sch.id</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border border-slate-200/60 p-2 bg-slate-50 rounded-2xl shadow-sm overflow-hidden w-full">
+                <iframe 
+                    id="peta-sekolah"
+                    class="w-full h-[300px] sm:h-[350px] rounded-xl border-0 block" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.775724220282!2d107.61657714842636!3d-6.917395106825883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1782721917424!5m2!1sid!2sid" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-500 py-8 text-center text-xs border-t border-slate-800">
+        <p>&copy; 2026 Yayasan <span class="nama-sekolah"></span>. All Rights Reserved. <a href="index.html" class="text-emerald-500 ml-1 hover:underline">Kembali ke Halaman Utama</a></p>
+    </footer>
+
+    <!-- LOGIKA JAVASCRIPT MOBILE MENU -->
+    <script>
+        // Memastikan inisialisasi berjalan serentak
+        lucide.createIcons();
+        const namaSekolah = "sekolahku";
+        document.querySelectorAll(".nama-sekolah").forEach(el=>el.textContent = namaSekolah);
+
+    </script>
+</body>
+</html>

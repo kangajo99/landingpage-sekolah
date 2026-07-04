@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Lucide Icons CDN Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+     <script src="header.js"></script>
+    <title>Sarana & Fasilitas - Yayasan Sekolahku</title>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+ <menu-header></menu-header>
+
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="bg-gradient-to-b from-white to-slate-50 py-20 px-4 text-center border-b border-slate-100">
+            <div class="container mx-auto max-w-3xl space-y-4">
+                <span class="inline-block bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-200 shadow-2xs">Sarana & Prasarana</span>
+                <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-slate-900">Fasilitas Infrastruktur Kampus</h1>
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                    Kami berkomitmen menyediakan fasilitas yang lengkap, modern, dan nyaman untuk mendukung efisiensi proses belajar mengajar serta akselerasi potensi terbaik putra-putri Anda.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. STATISTIK FASILITAS -->
+        <section class="py-12 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-5xl grid grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p class="text-2xl font-black text-emerald-600">30</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Ruang Kelas AC</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p class="text-2xl font-black text-emerald-600">5</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Laboratorium</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p class="text-2xl font-black text-emerald-600">1</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Perpustakaan E-Lib</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p class="text-2xl font-black text-emerald-600">3</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Lapangan Olahraga</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 col-span-2 lg:col-span-1">
+                    <p class="text-2xl font-black text-emerald-600">Full</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1">Koneksi Internet</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. KATEGORI FASILITAS (FILTER BUTTONS) -->
+        <section class="py-8 bg-slate-50 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
+            <div class="container mx-auto max-w-5xl flex flex-col items-center justify-between">
+                <div class="flex flex-wrap gap-2 justify-center" id="facility-filters">
+                    <button onclick="filterFacility('all')" id="fac-all" class="fac-btn px-4 py-2 text-xs font-bold rounded-xl bg-emerald-600 text-white shadow-xs cursor-pointer">Semua Fasilitas</button>
+                    <button onclick="filterFacility('akademik')" id="fac-akademik" class="fac-btn px-4 py-2 text-xs font-bold rounded-xl bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">Akademik & Teknologi</button>
+                    <button onclick="filterFacility('keagamaan')" id="fac-keagamaan" class="fac-btn px-4 py-2 text-xs font-bold rounded-xl bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">Keagamaan</button>
+                    <button onclick="filterFacility('olahraga')" id="fac-olahraga" class="fac-btn px-4 py-2 text-xs font-bold rounded-xl bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">Olahraga</button>
+                    <button onclick="filterFacility('penunjang')" id="fac-penunjang" class="fac-btn px-4 py-2 text-xs font-bold rounded-xl bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">Fasilitas Penunjang</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. DAFTAR FASILITAS (GRID CARDS DENGAN LAYOUT SEPERTI REKOMENDASI) -->
+        <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-5xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="facility-grid">
+                    
+                    <!-- Card 1: Lab Komputer -->
+                    <div class="facility-card bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden hover:shadow-xl transition flex flex-col justify-between" data-category="akademik">
+                        <div class="h-44 bg-slate-200 overflow-hidden relative">
+                            <img src="images/fasilitas/labkomputer.png" alt="Laboratorium Komputer" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <div class="flex items-center gap-2 text-emerald-600">
+                                <i data-lucide="monitor" class="w-5 h-5"></i>
+                                <h3 class="font-black text-slate-900 text-base">Laboratorium Komputer</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                Dilengkapi komputer berspesifikasi modern dan akses internet serat optik berkecepatan tinggi guna mendukung kurikulum pemrograman terapan serta digitalisasi mandiri.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-6 border-t border-slate-100 pt-4 bg-slate-50">
+                            <button onclick="openFacModal('Laboratorium Komputer', '60 Unit PC Core i5, Internet Fiber Optic, Proyektor HD, AC Sentral', 'Menampung praktek coding, workshop multimedia, simulasi jaringan, serta pelaksanaan CBT mandiri siswa.', '3 Kelas Paralel (Maksimal 60 Siswa)')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1 cursor-pointer">Lihat Spesifikasi &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Ruang Kelas AC -->
+                    <div class="facility-card bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden hover:shadow-xl transition flex flex-col justify-between" data-category="akademik">
+                        <div class="h-44 bg-slate-200 overflow-hidden relative">
+                            <img src="images/fasilitas/ruangkelasac.png" alt="Ruang Kelas AC" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <div class="flex items-center gap-2 text-emerald-600">
+                                <i data-lucide="school" class="w-5 h-5"></i>
+                                <h3 class="font-black text-slate-900 text-base">Ruang Kelas Smart AC</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                Ruang kelas representatif yang bersih, dilengkapi fasilitas penyejuk udara, pencahayaan alami optimal, proyektor, serta pengaturan meja belajar ergonomis.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-6 border-t border-slate-100 pt-4 bg-slate-50">
+                            <button onclick="openFacModal('Ruang Kelas Smart AC', 'AC Split, Smart Projector, Papan Tulis Kaca, Audio System Internal', 'Sebagai pusat kegiatan belajar mengajar harian berbasis active & collaborative learning.', 'Maksimal 32 Siswa Per Kelas')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1 cursor-pointer">Lihat Spesifikasi &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Masjid Al-Huda -->
+                    <div class="facility-card bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden hover:shadow-xl transition flex flex-col justify-between" data-category="keagamaan">
+                        <div class="h-44 bg-slate-200 overflow-hidden relative">
+                            <img src="images/fasilitas/mesjid.png" alt="Masjid Al-Huda" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <div class="flex items-center gap-2 text-emerald-600">
+                                <i data-lucide="moon" class="w-5 h-5"></i>
+                                <h3 class="font-black text-slate-900 text-base">Masjid Utama Al-Huda</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                Pusat pembinaan karakter spiritual, ibadah jamaah harian, serta tempat pelaksanaan program akselerasi setoran hafalan Tahfidz Qur'an.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-6 border-t border-slate-100 pt-4 bg-slate-50">
+                            <button onclick="openFacModal('Masjid Utama Al-Huda', 'Sound System Masjid Terintegrasi, Sajadah Premium, Al-Quran Standar Madinah, Mukena/Sarung Bersih', 'Shalat jamaah wajib, kajian fiqih, pembiasaan dzikir pagi, serta setoran halaqah tahfidz harian.', 'Kapasitas 800 Jamaah')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1 cursor-pointer">Lihat Spesifikasi &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Lapangan Olahraga -->
+                    <div class="facility-card bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden hover:shadow-xl transition flex flex-col justify-between" data-category="olahraga">
+                        <div class="h-44 bg-slate-200 overflow-hidden relative">
+                            <img src="images/fasilitas/lapang.png" alt="Lapangan Olahraga" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <div class="flex items-center gap-2 text-emerald-600">
+                                <i data-lucide="globe" class="w-5 h-5"></i>
+                                <h3 class="font-black text-slate-900 text-base">Lapangan Olahraga Terpadu</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                Sarana lapangan multifungsi ruang terbuka yang dirancang khusus untuk memfasilitasi kegiatan olahraga futsal, basket, voli, dan badminton siswa.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-6 border-t border-slate-100 pt-4 bg-slate-50">
+                            <button onclick="openFacModal('Lapangan Olahraga Terpadu', 'Ring Basket Standar Nasional, Gawang Futsal Portable, Tiang Voli/Net Net Badminton, Pembatas Keamanan Jaring', 'Mata pelajaran PJOK harian, turnamen persahabatan antar kelas, serta latihan rutin ekstrakurikuler futsal/basket.', '2 Tim Pertandingan Simultan')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1 cursor-pointer">Lihat Spesifikasi &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: UKS & Klinik Sehat -->
+                    <div class="facility-card bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden hover:shadow-xl transition flex flex-col justify-between" data-category="penunjang">
+                        <div class="h-44 bg-slate-200 overflow-hidden relative">
+                            <img src="images/fasilitas/uks.png" alt="Ruang UKS" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <div class="flex items-center gap-2 text-emerald-600">
+                                <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                                <h3 class="font-black text-slate-900 text-base">Ruang Medis &amp; UKS</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                Ruang pelayanan kesehatan darurat pertama yang higienis, teratur, dan selalu didukung oleh obat-obatan esensial penunjang siswa.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-6 border-t border-slate-100 pt-4 bg-slate-50">
+                            <button onclick="openFacModal('Ruang Medis & UKS', 'Ranjang Pasien, Tensimeter Digital, Tabung Oksigen Portable, Termometer Infrared, Kotak P3K Lengkap', 'Penanganan medis dini bagi siswa/guru yang mengalami sakit ringan atau kecelakaan saat beraktivitas di sekolah.', '3 Ranjang Perawatan Terpisah')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1 cursor-pointer">Lihat Spesifikasi &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Kantin Sehat Bersih -->
+                    <div class="facility-card bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden hover:shadow-xl transition flex flex-col justify-between" data-category="penunjang">
+                        <div class="h-44 bg-slate-200 overflow-hidden relative">
+                            <img src="images/fasilitas/kantin.png" alt="Kantin Sekolah" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <div class="flex items-center gap-2 text-emerald-600">
+                                <i data-lucide="coffee" class="w-5 h-5"></i>
+                                <h3 class="font-black text-slate-900 text-base">Kantin Sehat &amp; Higienis</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                Area kantin modern yang bersih, menyajikan hidangan makanan sehat bergizi yang dipantau ketat standar kelayakannya oleh manajemen internal.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-6 border-t border-slate-100 pt-4 bg-slate-50">
+                            <button onclick="openFacModal('Kantin Sehat & Higienis', 'Meja Makan Panjang Stainless Steel, Wastafel Cuci Tangan Otomatis, Sistem Transaksi Non-Tunai Digital', 'Tempat istirahat siswa untuk menikmati hidangan makan siang dan jajan yang aman bagi kesehatan fisik anak.', 'Kapasitas Tampung 150 Siswa')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1 cursor-pointer">Lihat Spesifikasi &rarr;</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. KEUNGGULAN FASILITAS -->
+        <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-5xl space-y-12">
+                <div class="text-center space-y-2">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight">Bagaimana Sarana Kami Mendukung Belajar?</h2>
+                    <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div class="p-5 bg-white rounded-2xl border border-slate-200/60 space-y-3 shadow-2xs">
+                        <div class="text-emerald-600"><i data-lucide="airplay" class="w-6 h-6 mx-auto"></i></div>
+                        <h4 class="font-bold text-sm text-slate-900">Interaktivitas Proyektor</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Setiap kelas dilengkapi proyektor digital terintegrasi untuk visualisasi materi ajar yang lebih padat.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-slate-200/60 space-y-3 shadow-2xs">
+                        <div class="text-emerald-600"><i data-lucide="wifi" class="w-6 h-6 mx-auto"></i></div>
+                        <h4 class="font-bold text-sm text-slate-900">Akses Internet Merata</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Konektivitas jaringan internet nirkabel khusus disediakan penuh guna menunjang riset literasi digital.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-slate-200/60 space-y-3 shadow-2xs">
+                        <div class="text-emerald-600"><i data-lucide="check-circle-2" class="w-6 h-6 mx-auto"></i></div>
+                        <h4 class="font-bold text-sm text-slate-900">Standarisasi Lab Sesuai</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Perangkat komputer dan alat praktikum sains disesuaikan periodik mengikuti standarisasi kelayakan.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-slate-200/60 space-y-3 shadow-2xs">
+                        <div class="text-emerald-600"><i data-lucide="leaf" class="w-6 h-6 mx-auto"></i></div>
+                        <h4 class="font-bold text-sm text-slate-900">Lingkungan Edukatif Hijau</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Area penataan taman hijau sekolah diposisikan strategis guna menyegarkan psikologis kenyamanan belajar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. PERAWATAN DAN PENGEMBANGAN COMMITMENT -->
+        <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-4xl text-center space-y-4 bg-gradient-to-br from-emerald-50 to-slate-50 p-8 rounded-3xl border border-emerald-100">
+                <div class="text-emerald-700"><i data-lucide="wrench" class="w-8 h-8 mx-auto"></i></div>
+                <h3 class="text-2xl font-black text-slate-900 tracking-tight">Komitmen Pemeliharaan Sarana</h3>
+                <p class="text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                    Manajemen Yayasan Manba'ul Huda secara terjadwal dan berkala melakukan audit, perawatan teknis, serta peremajaan seluruh unit sarana prasarana. Hal ini merupakan jaminan utama kami untuk memastikan ekosistem sekolah selalu berada dalam kondisi aman, nyaman, dan siap beroperasi optimal menunjang akselerasi studi harian siswa.
+                </p>
+            </div>
+        </section>
+
+        <!-- 9. FAQ (PERTANYAAN UMUM FASILITAS) -->
+        <section class="py-16 bg-slate-50 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-3xl space-y-8">
+                <div class="text-center space-y-2">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight">FAQ Sarana &amp; Fasilitas</h2>
+                    <div class="h-1 w-12 bg-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                <div class="space-y-4">
+                    <details class="bg-white p-4 rounded-xl border border-slate-200 group" open>
+                        <summary class="font-bold text-sm text-slate-800 cursor-pointer list-none flex justify-between items-center">
+                            Apakah laboratorium komputer diakses oleh seluruh tingkatan siswa?
+                            <span class="transition group-open:rotate-180">&darr;</span>
+                        </summary>
+                        <p class="text-xs text-slate-600 mt-2 pl-2 border-l-2 border-emerald-500">Ya, pemanfaatan laboratorium komputer dijadwalkan secara merata dan teratur baik bagi jenjang Madrasah Tsanawiyah (MTs) maupun Madrasah Aliyah (MA) untuk jam pengajaran IT/Coding.</p>
+                    </details>
+                    <details class="bg-white p-4 rounded-xl border border-slate-200 group" >
+                        <summary class="font-bold text-sm text-slate-800 cursor-pointer list-none flex justify-between items-center">
+                            Apakah jaringan internet sekolah difilter keamanannya?
+                            <span class="transition group-open:rotate-180">&darr;</span>
+                        </summary>
+                        <p class="text-xs text-slate-600 mt-2 pl-2 border-l-2 border-emerald-500">Ya, konektivitas WiFi sekolah menggunakan gerbang keamanan filtrasi konten khusus. Akses internet ditujukan hanya untuk keperluan modul edukasi, riset materi, dan dilarang keras untuk platform hiburan tidak mendidik.</p>
+                    </details>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CTA (CALL TO ACTION CONVERSION) -->
+        <section class="py-16 bg-gradient-to-br from-emerald-800 to-slate-900 text-white px-4 text-center">
+            <div class="container mx-auto max-w-2xl space-y-6">
+                <h2 class="text-2xl sm:text-3xl font-black tracking-tight">Ingin Meninjau Langsung Fasilitas Kampus Kami?</h2>
+                <p class="text-emerald-100/80 text-sm leading-relaxed">
+                    Kami dengan senang hati mengundang Bapak/Ibu Wali Murid untuk melakukan kunjungan langsung, melihat ekosistem kelas, dan berdiskusi bersama panitia PPDB.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+                    <a href="index.html#kontak-detail" class="bg-white hover:bg-slate-100 text-slate-800 font-bold px-6 py-3 rounded-xl shadow-md text-xs sm:text-sm transition">Jadwalkan Kunjungan</a>
+                    <a href="index.html#pendaftaran" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-md text-xs sm:text-sm transition">Daftar PPDB Online</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-500 py-8 text-center text-xs">
+        <p>&copy; 2026 Yayasan Sekolahku. All Rights Reserved. <a href="index.html" class="text-emerald-500 ml-1 hover:underline">Kembali ke Beranda</a></p>
+    </footer>
+
+
+    <!-- DETAILED MODAL SYSTEM SYSTEM CONTAINER (Murni Bebas dari cssConflict) -->
+    <div id="fac-modal" class="hidden fixed inset-0 bg-black/80 z-50 items-center justify-center p-4 transition duration-300">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 space-y-4 relative border border-slate-100 shadow-2xl animate-fadeIn">
+            <!-- Header Modal -->
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h4 id="modal-title" class="font-black text-slate-900 text-lg">Nama Fasilitas</h4>
+                <button onclick="closeFacModal()" class="text-slate-400 hover:text-slate-600 bg-slate-100 p-1.5 rounded-full cursor-pointer"><i data-lucide="x" class="w-4 h-4"></i></button>
+            </div>
+            <!-- Body Content -->
+            <div class="space-y-3 text-xs leading-relaxed">
+                <div><p class="font-bold text-slate-400 uppercase tracking-wider text-[10px]">Peralatan &amp; Inventaris:</p><p id="modal-equipment" class="text-slate-700 font-medium mt-0.5">Spesifikasi...</p></div>
+                <div><p class="font-bold text-slate-400 uppercase tracking-wider text-[10px]">Fungsi Utama:</p><p id="modal-function" class="text-slate-700 font-medium mt-0.5">Fungsi...</p></div>
+                <div><p class="font-bold text-slate-400 uppercase tracking-wider text-[10px]">Kapasitas Tampung:</p><p id="modal-capacity" class="text-slate-600 font-bold mt-0.5">Kapasitas...</p></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT UTAMA JAVASCRIPT LOGIC -->
+    <script>
+        // Render Lucide Icons
+        lucide.createIcons();
+
+        // 1. JAVASCRIPT ACTION: FILTER KATEGORI FASILITAS TANPA RELOAD
+        function filterFacility(category) {
+            const cards = document.querySelectorAll('.facility-card');
+            const buttons = document.querySelectorAll('.fac-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-emerald-600', 'text-white', 'shadow-xs');
+                btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+            const targetBtn = document.getElementById(`fac-${category}`);
+            targetBtn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            targetBtn.classList.add('bg-emerald-600', 'text-white', 'shadow-xs');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // 2. JAVASCRIPT ACTION: MODAL SYSTEM PREVIEW SPESIFIKASI FASILITAS
+        const modal = document.getElementById('fac-modal');
+        const mTitle = document.getElementById('modal-title');
+        const mEquipment = document.getElementById('modal-equipment');
+        const mFunction = document.getElementById('modal-function');
+        const mCapacity = document.getElementById('modal-capacity');
+
+        function openFacModal(title, equipment, func, capacity) {
+            mTitle.textContent = title;
+            mEquipment.textContent = equipment;
+            mFunction.textContent = func;
+            mCapacity.textContent = capacity;
+
+            // Suntik display flex secara dinamis untuk menghindari cssConflict
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeFacModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Close modal jika area luar diklik
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) { closeFacModal(); }
+        });
+    </script>
+</body>
+</html>
